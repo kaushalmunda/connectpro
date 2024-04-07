@@ -155,7 +155,7 @@ h1 {
 
 .join-link {
   font-size: 0.9rem;
-  margin: 30px 0 80px 0;
+  margin: 30px 0 0 0;
 }
 
 .join-now {
@@ -172,6 +172,8 @@ h1 {
 .foot-align {
   display: flex;
   justify-content: center;
+  margin-top: 80px;
+  padding-bottom: 10px;
 }
 .footer {
   width: 930px;
