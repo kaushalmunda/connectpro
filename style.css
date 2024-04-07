@@ -5,7 +5,7 @@
 }
 
 body {
-  padding: 25px 25px 30px 25px;
+  padding: 25px 25px 15px 25px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -173,7 +173,6 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  padding-bottom: 10px;
 }
 .footer {
   width: 930px;
