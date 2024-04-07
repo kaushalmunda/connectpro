@@ -5,17 +5,13 @@
 }
 
 body {
-  padding: 25px 25px 15px 25px;
+  padding: 25px 25px 10px 25px;
   font-family: "Roboto", sans-serif;
-}
-
-.login-page {
-  height: 100vh;
 }
 
 #logoblue {
   display: block;
-  width: 100px;
+  width: 120px;
 }
 
 /* sign in container */
@@ -25,7 +21,7 @@ body {
 }
 
 .container-signin {
-  width: 310px;
+  width: 340px;
   margin: 10px 0 0;
   padding: 20px 18px 18px;
   background-color: white;
@@ -34,19 +30,19 @@ body {
 }
 
 h1 {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 .message {
   margin-top: 8px;
   margin-bottom: 18px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 #user,
 #password {
   width: 100%;
-  height: 45px;
+  height: 50px;
   padding-left: 10px;
   border: 1px solid #626565;
   border-radius: 5px;
@@ -62,7 +58,7 @@ h1 {
 }
 
 #password {
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 /* password input field */
@@ -88,7 +84,7 @@ h1 {
 
 .forgot-password {
   color: #0a66c3;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -100,7 +96,7 @@ h1 {
 .signin-button,
 .signin-apple {
   width: 100%;
-  height: 45px;
+  height: 50px;
   border-radius: 25px;
   outline: none;
   font-weight: bold;
@@ -154,7 +150,7 @@ h1 {
 }
 
 .join-link {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 30px 0 0 0;
 }
 
@@ -174,6 +170,7 @@ h1 {
   justify-content: center;
   margin-top: 80px;
 }
+
 .footer {
   width: 930px;
   display: flex;
@@ -188,7 +185,7 @@ h1 {
 
 .footer-link {
   color: #626565;
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -198,20 +195,20 @@ h1 {
 }
 
 #logoblack {
-  width: 65px;
+  width: 70px;
   margin-right: 5px;
 }
 
 #copyright {
   display: inline;
   color: #626565;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #lang {
   border: none;
   color: #626565;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .lang-select #lang:focus {
