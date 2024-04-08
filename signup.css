@@ -1,0 +1,266 @@
+:root {
+  --themeblue-color: #0a66c3; /* variable for theme blue color */
+
+  /* variable for max gray shade used in footer and apple button */
+  --grayshade-color: #626565;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 25px 25px 10px 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login1,
+.login1-link {
+  display: none;
+}
+
+/* ConnectPro logo */
+#logoblue {
+  display: block;
+  width: 120px;
+}
+
+/* sign up container */
+.signup-container-align {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.signup-container {
+  display: flex;
+  width: 75%;
+  box-shadow: 0 0 7px 1px rgba(179, 179, 179, 0.7);
+  border-radius: 7px;
+}
+
+.image-container {
+  width: 40%;
+}
+
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px 0 0 7px;
+}
+
+.form-container {
+  width: 60%;
+  padding: 20px 40px 25px 40px;
+  background-color: white;
+  border-radius: 0 7px 7px 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* grid display for form field */
+.form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 25px;
+  margin-top: 30px;
+}
+
+/* form field grip start and end */
+#div-company {
+  grid-column: 1/3;
+}
+
+#div-address {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#div-city {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+#div-state {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+#div-zip {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+/* END grid field position */
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 25px;
+  padding: 13px 0;
+  color: var(--grayshade-color);
+  font-size: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+/* Sign up button */
+.signup-button {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  background-color: var(--themeblue-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* login now code */
+.login {
+  display: flex;
+  justify-content: center;
+}
+
+.login-link {
+  font-size: 1rem;
+  margin: 30px 0 0 0;
+}
+
+.login-now {
+  color: var(--themeblue-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-now:hover {
+  color: #0000ee;
+}
+
+/* footer css */
+.foot-align {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.footer {
+  width: 930px;
+  display: flex;
+  gap: 13px;
+  justify-content: center;
+}
+
+.copy-container {
+  display: flex;
+  padding-top: 3.5px;
+}
+
+.footer-link {
+  color: var(--grayshade-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+#logoblack {
+  width: 70px;
+  margin-right: 5px;
+}
+
+#copyright {
+  display: inline;
+  color: var(--grayshade-color);
+  font-size: 14px;
+}
+
+#lang {
+  border: none;
+  color: var(--grayshade-color);
+  font-size: 14px;
+}
+
+.lang-select #lang:focus {
+  outline: none;
+}
+
+.lang-select #lang:hover {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+/* media query for screens below 957px */
+@media (max-width: 957px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+}
+
+/* media query for screens below 900px */
+@media (max-width: 900px) {
+  .signup-container {
+    width: 85%;
+  }
+}
+
+/* media query for screens below 775px */
+@media (max-width: 775px) {
+  .image-container,
+  .image-container > img {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .login,
+  .login-link {
+    display: none;
+  }
+
+  .login1,
+  .login1-link {
+    display: block;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+}
+
+/* media query for screens below 575px */
+@media (max-width: 575px) {
+  .form-fields {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* media query for screens below 450px */
+@media (max-width: 450px) {
+  .signup-container {
+    width: 90%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
