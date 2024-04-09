@@ -230,6 +230,7 @@ input {
 
   .form-container {
     width: 100%;
+    border-radius: 7px;
   }
 
   .login,
@@ -256,7 +257,7 @@ input {
 /* media query for screens below 450px */
 @media (max-width: 450px) {
   .signup-container {
-    width: 90%;
+    width: 340px;
   }
 
   .footer {
